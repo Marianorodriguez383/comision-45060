@@ -1,11 +1,13 @@
 import { Button } from "../Button/Button";
 
-const Main = ({saludo,edad,datos}) =>{
+
+const Main = ({saludo,edad,datos,saludar}) =>{
   const {nombre,comision} =datos;  
   
+
   return (
     <main>
-      <p>Hola! {saludo}</p>
+      <p onClick={saludar}>Hola! {saludo}</p>
       <p>Mi edad es: {edad} años ! </p>
       <p>
         {nombre}-{comision}
